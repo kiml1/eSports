@@ -1,7 +1,7 @@
 import scrapy
 
 
-class EsportsItem(scrapy.Item):
+class EarningsbycountryItem(scrapy.Item):
     #year = scrapy.Field()
     country = scrapy.Field()
     playerID = scrapy.Field()

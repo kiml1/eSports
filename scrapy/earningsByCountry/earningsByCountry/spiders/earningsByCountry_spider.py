@@ -1,10 +1,10 @@
-from eSports.items import EsportsItem
+from earningsByCountry.items import EarningsbycountryItem
 from scrapy import Spider, Request
 import re
 
 
-class EsportsSpider(Spider):
-    name = 'esports_spider'
+class EarningsCountrySpider(Spider):
+    name = 'earningsCountry_spider'
     allowed_urls = ['https://www.esportsearnings.com/']
     start_urls = ['https://www.esportsearnings.com/countries']
 
@@ -43,7 +43,7 @@ class EsportsSpider(Spider):
                 './/td[@class="format_cell detail_list_prize border_right"]/text()').extract_first())))
             game = player.xpath('.//a/text()').extract()[2]
 
-            item = EsportsItem()
+            item = EarningsbycountryItem()
             item['country'] = country
             item['playerID'] = playerID
             item['playerName'] = playerName
