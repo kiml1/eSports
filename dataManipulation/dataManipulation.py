@@ -1,4 +1,16 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
-eSportsData = pd.read_csv('../scrapy/eSports_players.csv')
+
+# import data sets
+earningsHistory = pd.read_csv('../scrapy/earningsHistory/eSports_players.csv')
+earningsCountry = pd.read_csv(
+    '../scrapy/earningsByCountry/earningsCountry_players.csv')
+
+
+# plot1 - countries ranking by total earnings
+plt.figure(figsize=(12, 6))
+earningsCountry.groupby('country')['totalOverall'].sum().sort_values(
+    ascending=False).head(10).plot.bar(color='b')
+plt.savefig("plot1.png")
