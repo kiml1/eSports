@@ -14,3 +14,10 @@ plt.figure(figsize=(12, 6))
 earningsCountry.groupby('country')['totalOverall'].sum().sort_values(
     ascending=False).head(10).plot.bar(color='b')
 plt.savefig("plot1.png")
+
+# plot2 - eSports earnings by year
+plt.figure(figsize=(12, 6))
+earningsHistory.groupby('year')['totalOverall'].sum().sort_values(
+    ascending=True).head(15).plot.bar(color='r')
+
+# plot3 -
