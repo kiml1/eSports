@@ -20,4 +20,13 @@ plt.figure(figsize=(12, 6))
 earningsHistory.groupby('year')['totalOverall'].sum().sort_values(
     ascending=True).head(15).plot.bar(color='r')
 
-# plot3 -
+# plot3 - most successful players
+plt.figure(figsize=(12, 6))
+earningsCountry.sort_values('totalOverall', ascending=False).head(10)
+
+# plot4 - games rank by prize money
+plt.figure(figsize=(12, 6))
+earningsCountry.groupby('game')['totalOverall'].sum().sort_values(
+    ascending=False).head(20).plot.bar(color='r')
+
+# plot5 -
