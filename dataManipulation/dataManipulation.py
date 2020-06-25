@@ -17,8 +17,8 @@ plt.savefig("plot1.png")
 
 # plot2 - eSports earnings by year
 plt.figure(figsize=(12, 6))
-earningsHistory.groupby('year')['totalOverall'].sum().sort_values(
-    ascending=True).head(15).plot.bar(color='r')
+earningsHistory.groupby('year')['totalYear'].sum().sort_values(
+    ascending=True).plot.bar(color='r')
 
 # plot3 - most successful players
 plt.figure(figsize=(12, 6))
@@ -29,4 +29,6 @@ plt.figure(figsize=(12, 6))
 earningsCountry.groupby('game')['totalOverall'].sum().sort_values(
     ascending=False).head(20).plot.bar(color='r')
 
-# plot5 -
+# plot5 - top game by year
+plt.figure(figsize=(12, 6))
+earningsHistory.groupby('year')['totalOverall', 'game']
