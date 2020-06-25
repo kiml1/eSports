@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 # import data sets
@@ -10,10 +11,18 @@ earningsCountry = pd.read_csv(
 
 
 # plot1 - countries ranking by total earnings
-plt.figure(figsize=(12, 6))
-earningsCountry.groupby('country')['totalOverall'].sum().sort_values(
-    ascending=False).head(10).plot.bar(color='b')
-plt.savefig("plot1.png")
+sns.set(style="whitegrid")
+f, ax = plt.subplots(figsize=(6, 15))
+
+countriesRankingEarnings_df = earningsHistory[['country', 'totalYear']]
+countriesRankingEarnings = countriesRankingEarnings_df.groupby(
+    'country', as_index=False).sum().sort_values('totalYear', ascending=False).head(20)
+
+
+sns.set_color_codes("pastel")
+sns.barplot(x="totalYear", y="country",
+            data=countriesRankingEarnings, label="Total", color="b")
+
 
 # plot2 - eSports earnings by year
 plt.figure(figsize=(12, 6))
