@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from matplotlib.ticker import FuncFormatter
 
 
 # import data sets
@@ -18,12 +19,13 @@ countriesRankingEarnings = countriesRankingEarnings_df.groupby(
     'country', as_index=False).sum().sort_values('totalOverall', ascending=False).head(20)
 
 # ---------plot
+plt.figure(figsize=(20, 6))
 sns.set(style="whitegrid")
 countriesRankingEarnings_plot = sns.barplot(
     x="totalOverall", y="country", data=countriesRankingEarnings, color='g')
 plt.xlabel('Purchase amount', fontsize=18)
 countriesRankingEarnings_plot.set(xlabel='Total Earnings in US$', ylabel='')
-
+plt.savefig('countriesEarnings.png')
 
 #=============================================================================#
 # plot2 - eSports earnings by year
@@ -34,10 +36,15 @@ earningsHistory.groupby('year')['totalYear'].sum().sort_values(
 
 #=============================================================================#
 # plot3 - most successful players
-plt.figure(figsize=(12, 6))
-topPlayers = earningsCountry.sort_values(
-    'totalOverall', ascending=False).head(10)
-plt.bar(topPlayers['playerID'], topPlayers['totalOverall'])
+plt.figure(figsize=(20, 6))
+topPlayers_df = earningsCountry.sort_values(
+    'totalOverall', ascending=False).head(15)
+
+topPlayers_plot = plt.bar(
+    topPlayers_df['playerID'], topPlayers_df['totalOverall'])
+plt.xlabel('Player in-game ID')
+plt.ylabel('Earnings US$')
+plt.savefig('topPlayers.png')
 
 
 #=============================================================================#
@@ -45,7 +52,7 @@ plt.bar(topPlayers['playerID'], topPlayers['totalOverall'])
 plt.figure(figsize=(12, 6))
 earningsCountry.groupby('game')['totalOverall'].sum().sort_values(
     ascending=False).head(20).plot.bar(color='r')
-
+plt.savefig('topGames_prizepool.png')
 
 #=============================================================================#
 # plot5 - top game by year
