@@ -25,7 +25,7 @@ countriesRankingEarnings_plot = sns.barplot(
     x="totalOverall", y="country", data=countriesRankingEarnings, color='g')
 plt.xlabel('Purchase amount', fontsize=18)
 countriesRankingEarnings_plot.set(xlabel='Total Earnings in US$', ylabel='')
-plt.savefig('countriesEarnings.png')
+plt.savefig('../shiny/www/images/countriesEarnings.png')
 
 #=============================================================================#
 # plot2 - eSports earnings by year
@@ -44,7 +44,7 @@ topPlayers_plot = plt.bar(
     topPlayers_df['playerID'], topPlayers_df['totalOverall'])
 plt.xlabel('Player in-game ID')
 plt.ylabel('Earnings US$')
-plt.savefig('topPlayers.png')
+plt.savefig('../shiny/www/images/topPlayers.png')
 
 
 #=============================================================================#
@@ -52,7 +52,7 @@ plt.savefig('topPlayers.png')
 plt.figure(figsize=(12, 6))
 earningsCountry.groupby('game')['totalOverall'].sum().sort_values(
     ascending=False).head(20).plot.bar(color='r')
-plt.savefig('topGames_prizepool.png')
+plt.savefig('../shiny/www/images/topGames_prizepool.png')
 
 #=============================================================================#
 # plot5 - top game by year
