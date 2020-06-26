@@ -35,7 +35,9 @@ earningsHistory.groupby('year')['totalYear'].sum().sort_values(
 #=============================================================================#
 # plot3 - most successful players
 plt.figure(figsize=(12, 6))
-earningsCountry.sort_values('totalOverall', ascending=False).head(10)
+topPlayers = earningsCountry.sort_values(
+    'totalOverall', ascending=False).head(10)
+plt.bar(topPlayers['playerID'], topPlayers['totalOverall'])
 
 
 #=============================================================================#
