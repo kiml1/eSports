@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.ticker import FuncFormatter
+import numpy
 
 
 # import data sets
@@ -10,6 +11,7 @@ earningsHistory = pd.read_csv('../scrapy/earningsHistory/eSports_players.csv')
 earningsCountry = pd.read_csv(
     '../scrapy/earningsByCountry/earningsCountry_players.csv')
 countryEarnings = pd.read_csv('../scrapy/countryEarnings/countryEarnings.csv')
+femalePlayers = pd.read_csv('../scrapy/femalePlayers/femalePlayers.csv')
 
 #=============================================================================#
 # plot1 - countries ranking by total earnings
@@ -54,7 +56,31 @@ earningsCountry.groupby('game')['totalOverall'].sum().sort_values(
     ascending=False).head(20).plot.bar(color='r')
 plt.savefig('../shiny/www/images/topGames_prizepool.png')
 
+
 #=============================================================================#
 # plot5 - top game by year
 plt.figure(figsize=(12, 6))
 earningsHistory.groupby('year')['totalOverall', 'game']
+
+
+#=============================================================================#
+# table6 - top 20 female players
+plt.figure(figsize=(12, 6))
+femalePlayers[['country', 'game', 'playerID',
+               'playerName', 'totalOverall']].head(10).to_html('femalePlayersTable.html')
+
+
+#=============================================================================#
+# plot7 - men vs women comparison in prize money
+labels = 'Top 500 female players earnings', 'Top 1 male player earnings'
+sizes = [femalePlayers.totalOverall.sum(),
+         earningsCountry.totalOverall.max()]
+explode = (0.1, 0)
+colors = ['lightcoral', 'lightskyblue']
+total = sum(sizes)
+
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode=explode, labels=labels, autopct=lambda p: '${:,.2f}'.format(p * total / 100), colors=colors,
+        shadow=True, startangle=90)
+ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.savefig('../shiny/www/images/menVSwomen_earnings.png')
