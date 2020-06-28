@@ -1,0 +1,459 @@
+game,genre,numberPlayers,numberTournaments,totalOverall
+Age of Empires,Strategy,246,95,190075.61
+Age of Empires II,Strategy,801,497,1417624.06
+Age of Empires III,Strategy,86,72,66463.85
+Age of Empires Online,Strategy,11,5,1800.0
+Age of Mythology,Strategy,22,6,52360.0
+Auto Chess,Strategy,72,6,1076322.28
+Brawl Stars,Strategy,51,10,94950.0
+Chess.com,Strategy,519,127,653228.54
+chess24,Strategy,45,5,477876.21
+Clash of Clans,Strategy,77,3,751576.87
+Clash Royale,Strategy,222,39,2293020.39
+Command & Conquer 3,Strategy,9,8,53086.67
+Company of Heroes 2,Strategy,11,6,8561.22
+ComPet,Strategy,50,1,2000.0
+Dota Underlords,Strategy,62,36,26024.18
+Endgods,Strategy,0,0,0.0
+Farming Simulator 19,Strategy,84,12,158361.3
+Grey Goo,Strategy,18,5,36400.0
+Lichess,Strategy,72,50,403525.0
+osu!,Strategy,971,7,23100.0
+Playchess.com,Strategy,68,3,23677.36
+Pokémon VGC,Strategy,170,24,211500.0
+Prophecy,Strategy,27,4,13000.0
+Rise of Nations: Rise of Legends,Strategy,8,1,69600.0
+Sea of Thieves,Strategy,0,0,0.0
+StarCraft II,Strategy,2044,5848,33017749.29
+StarCraft: Brood War,Strategy,674,571,8251181.43
+Super Mario Party,Strategy,4,1,220.0
+Supreme Commander,Strategy,0,1,4901.26
+Supreme Commander: Forged Alliance,Strategy,0,1,1290.01
+Teamfight Tactics,Strategy,131,11,594539.65
+TEPPEN,Strategy,12,1,456721.47
+Tetr.io,Strategy,6,4,1260.19
+UNO,Strategy,16,2,20000.0
+WarCraft III,Strategy,558,1335,5811479.73
+WarCraft III: Reforged,Strategy,55,50,89667.43
+"Warhammer 40,000: Dawn of War",Strategy,7,3,79816.5
+"Warhammer 40,000: Dawn of War II",Strategy,0,0,0.0
+Warparty,Strategy,4,1,1000.0
+Windjammers,Strategy,31,10,4132.16
+World in Conflict,Strategy,38,11,293338.23
+World of Tanks,Strategy,403,50,3656496.59
+World of Tanks Blitz,Strategy,14,6,63330.0
+Aliens versus Predator 2,First-Person Shooter,1,1,40000.0
+Battalion 1944,First-Person Shooter,114,21,185654.67
+Battalion 1944,First-Person Shooter,0,0,0.0
+Battlefield 1,First-Person Shooter,0,0,0.0
+Battlefield 2,First-Person Shooter,0,12,91715.22
+Battlefield 2142,First-Person Shooter,0,4,18546.14
+Battlefield 3,First-Person Shooter,5,7,25407.46
+Battlefield 4,First-Person Shooter,204,145,245766.46
+Battlefield 5,First-Person Shooter,0,0,0.0
+Battlefield Hardline,First-Person Shooter,20,1,13463.28
+Big Buck Hunter Arcade,First-Person Shooter,3,1,76200.0
+Black Squad,First-Person Shooter,57,17,8480.72
+Borderlands 3,First-Person Shooter,0,0,0.0
+Call of Duty,First-Person Shooter,51,3,50629.77
+Call of Duty 2,First-Person Shooter,41,17,66828.51
+Call of Duty 4: Modern Warfare,First-Person Shooter,422,86,420331.47
+Call of Duty: Advanced Warfare,First-Person Shooter,784,404,2608808.93
+Call of Duty: Black Ops,First-Person Shooter,117,22,347393.48
+Call of Duty: Black Ops 2,First-Person Shooter,184,53,1467139.25
+Call of Duty: Black Ops 4,First-Person Shooter,437,81,7264452.0
+Call of Duty: Black Ops III,First-Person Shooter,420,78,3939783.29
+Call of Duty: Ghosts,First-Person Shooter,199,76,1594185.25
+Call of Duty: Infinite Warfare,First-Person Shooter,341,80,4156205.06
+Call of Duty: Mobile,First-Person Shooter,0,0,0.0
+Call of Duty: Modern Warfare,First-Person Shooter,243,34,1529784.5
+Call of Duty: Modern Warfare 2,First-Person Shooter,40,8,60010.64
+Call of Duty: Modern Warfare 3,First-Person Shooter,206,39,1134475.66
+Call of Duty: Warzone,First-Person Shooter,303,43,996163.37
+Call of Duty: World War II,First-Person Shooter,266,64,4559271.0
+Counter-Strike,First-Person Shooter,4137,994,13492961.87
+Counter-Strike Online,First-Person Shooter,70,12,406989.6
+Counter-Strike: Condition Zero,First-Person Shooter,111,3,162150.6
+Counter-Strike: Global Offensive,First-Person Shooter,12886,5057,98196757.51
+Counter-Strike: Source,First-Person Shooter,1499,333,3115972.29
+Critical Ops,First-Person Shooter,4,3,12606.41
+CrossFire,First-Person Shooter,629,306,6448845.02
+Crysis,First-Person Shooter,0,2,11340.95
+Day of Defeat,First-Person Shooter,37,3,50300.0
+Day of Defeat: Source,First-Person Shooter,50,8,14068.57
+Descent 3,First-Person Shooter,1,1,50000.0
+Diabotical,First-Person Shooter,46,13,5535.93
+Doom (2016),First-Person Shooter,6,1,7000.0
+Doom 3,First-Person Shooter,14,4,257748.16
+Doom II: Hell on Earth,First-Person Shooter,1,2,1000.0
+Echo Arena,First-Person Shooter,0,0,0.0
+Enemy Territory: Quake Wars,First-Person Shooter,27,4,60923.12
+Escape from Tarkov,First-Person Shooter,3,2,54600.0
+Evolve,First-Person Shooter,110,33,131509.05
+F.E.A.R.,First-Person Shooter,20,5,178000.0
+Ghost Recon Advanced Warfighter,First-Person Shooter,0,2,24000.0
+Gray Basin,First-Person Shooter,0,0,0.0
+Gundam Versus,First-Person Shooter,6,1,280.0
+Guns of Boom,First-Person Shooter,8,21,198750.0
+Halo 2,First-Person Shooter,119,71,1489362.47
+Halo 2 Anniversary,First-Person Shooter,97,20,468705.05
+Halo 3,First-Person Shooter,210,41,2158079.4
+Halo 4,First-Person Shooter,66,19,430748.76
+Halo 5: Guardians,First-Person Shooter,233,75,7071480.97
+Halo: Combat Evolved,First-Person Shooter,114,39,299281.0
+Halo: Infinite,First-Person Shooter,0,0,0.0
+Halo: Reach,First-Person Shooter,101,29,822089.97
+Ironsight,First-Person Shooter,0,0,0.0
+Islands of Nyne,First-Person Shooter,0,0,0.0
+MechWarrior Online,First-Person Shooter,0,1,143490.0
+Metal Gear Online,First-Person Shooter,37,8,8000.0
+Overwatch,First-Person Shooter,3482,737,21928183.28
+Painkiller,First-Person Shooter,48,13,1015000.0
+Paladins,First-Person Shooter,188,30,1530026.63
+Point Blank,First-Person Shooter,297,32,699167.75
+Quake 4,First-Person Shooter,100,52,556678.51
+Quake Champions,First-Person Shooter,210,197,2245853.43
+Quake II,First-Person Shooter,32,10,140179.5
+Quake III Arena,First-Person Shooter,243,100,1137832.19
+Quake Live,First-Person Shooter,213,410,682294.04
+QuakeWorld,First-Person Shooter,47,14,99083.7
+Rage,First-Person Shooter,3,1,5000.0
+Rainbow Six Siege,First-Person Shooter,1527,226,12159469.7
+Rainbow Six: Vegas,First-Person Shooter,137,7,176400.77
+Rainbow Six: Vegas 2,First-Person Shooter,0,8,79000.0
+Realm Royale,First-Person Shooter,47,9,263000.0
+Reflex,First-Person Shooter,21,7,2158.4
+Return to Castle Wolfenstein,First-Person Shooter,30,3,67424.3
+S.K.I.L.L. - Special Force 2,First-Person Shooter,82,21,132532.93
+S.T.A.L.K.E.R.: Shadow of Chernobyl,First-Person Shooter,0,1,4901.26
+Shadowrun,First-Person Shooter,0,3,24000.0
+ShootMania Storm,First-Person Shooter,80,40,261687.04
+Special Force,First-Person Shooter,0,3,130250.0
+Splatoon,First-Person Shooter,3,4,1390.0
+Splatoon 2,First-Person Shooter,13,7,10055.0
+Star Wars Jedi Knight II: Jedi Outcast,First-Person Shooter,0,1,7679.25
+Sudden Attack,First-Person Shooter,0,0,0.0
+Team Fortress 2,First-Person Shooter,1352,186,709559.83
+Uncharted 4: A Thief's End,First-Person Shooter,5,1,46235.07
+Unreal Tournament,First-Person Shooter,14,5,89000.0
+Unreal Tournament (2016),First-Person Shooter,82,8,5084.97
+Unreal Tournament 2003,First-Person Shooter,33,14,147473.91
+Unreal Tournament 2004,First-Person Shooter,41,12,133969.33
+Unreal Tournament 3,First-Person Shooter,7,4,104977.82
+VALORANT,First-Person Shooter,713,105,399140.16
+Warface,First-Person Shooter,32,2,109555.0
+Warsow,First-Person Shooter,2,1,183.0
+Wolfenstein: Enemy Territory,First-Person Shooter,152,18,140963.24
+Xonotic,First-Person Shooter,123,20,2743.21
+Zula,First-Person Shooter,20,1,100000.0
+Arena of Valor,Multiplayer Online Battle Arena,536,49,14556095.63
+Battlerite,Multiplayer Online Battle Arena,86,75,65173.45
+Bloodline Champions,Multiplayer Online Battle Arena,43,12,41905.32
+Creative Destruction,Multiplayer Online Battle Arena,8,1,100000.0
+Defense of the Ancients,Multiplayer Online Battle Arena,468,94,857420.65
+Dofus,Multiplayer Online Battle Arena,0,0,0.0
+Dota 2,Multiplayer Online Battle Arena,3691,1394,224942531.46
+Heavy Metal Machines,Multiplayer Online Battle Arena,35,1,12339.33
+Heroes of Newerth,Multiplayer Online Battle Arena,816,371,2915206.56
+Heroes of the Storm,Multiplayer Online Battle Arena,1205,459,18170133.73
+League of Legends,Multiplayer Online Battle Arena,6947,2439,75571470.8
+Legend of Glory,Multiplayer Online Battle Arena,0,1,472.66
+Minecraft,Multiplayer Online Battle Arena,22,11,84839.15
+MOBA Legends,Multiplayer Online Battle Arena,3,1,225.0
+Mobile Legends: Bang Bang,Multiplayer Online Battle Arena,0,0,0.0
+Shards of War,Multiplayer Online Battle Arena,20,1,1029.21
+SMITE,Multiplayer Online Battle Arena,522,95,8640112.75
+Splitgate: Arena Warfare,Multiplayer Online Battle Arena,64,2,50000.0
+Teeworlds,Multiplayer Online Battle Arena,0,0,0.0
+Vainglory,Multiplayer Online Battle Arena,247,35,797421.19
+Blade & Soul,Role-Playing Game,51,5,409355.52
+Guild Wars 2,Role-Playing Game,152,57,476005.5
+Old School Runescape,Role-Playing Game,66,22,422504.2
+Red Stone,Role-Playing Game,12,2,58000.0
+World of WarCraft,Role-Playing Game,413,118,4957837.61
+Acceleration of SUGURI 2,Fighting Game,3,1,210.0
+Aquapazza: Aquaplus Dream Match,Fighting Game,5,2,245.0
+Arcana Heart 3,Fighting Game,4,1,1000.0
+Arcana Heart 3: Love Max Six Stars!!!!!,Fighting Game,7,3,520.0
+Arcana Heart 3: LOVE MAX!!!!!,Fighting Game,6,2,410.0
+ARMS,Fighting Game,95,81,18198.09
+Attack on Titan Tribute Game,Fighting Game,99,75,1570513.53
+BlazBlue: Calamity Trigger,Fighting Game,3,1,35.0
+BlazBlue: Central Fiction,Fighting Game,81,34,78582.42
+BlazBlue: Chronophantasma,Fighting Game,63,15,37020.58
+BlazBlue: Chronophantasma Extend,Fighting Game,28,11,4918.77
+BlazBlue: Continuum Shift Extend,Fighting Game,3,1,0.0
+BlazBlue: Continuum Shift II,Fighting Game,14,5,24591.01
+BlazBlue: Cross Tag Battle,Fighting Game,89,31,82800.03
+Brawlhalla,Fighting Game,502,389,1164012.39
+Brawlout,Fighting Game,0,0,0.0
+Capcom vs. SNK,Fighting Game,6,2,140.0
+Capcom vs. SNK 2,Fighting Game,36,19,24186.79
+Chaos Code: New Sign of Catastrophe,Fighting Game,3,1,140.0
+Dead or Alive 4,Fighting Game,45,13,497745.31
+Dead or Alive 5,Fighting Game,4,2,0.0
+Dead or Alive 5 Ultimate,Fighting Game,37,7,0.0
+Dead or Alive 5: Last Round,Fighting Game,45,19,8163.82
+Dead or Alive 6,Fighting Game,57,16,63822.54
+Dead or Alive Ultimate,Fighting Game,3,1,30000.0
+Dengeki Bunko: Fighting Climax,Fighting Game,3,1,60.0
+Dengeki Bunko: Fighting Climax Ignition,Fighting Game,27,8,2667.3
+Divekick,Fighting Game,27,11,5840.0
+Dragon Ball FighterZ,Fighting Game,159,73,337985.4
+Dragon Ball Z: Budokai 3,Fighting Game,3,1,204.06
+Fantasy Strike,Fighting Game,8,1,2610.0
+Fighter's History Dynamite,Fighting Game,3,1,195.0
+Fighting EX Layer,Fighting Game,14,6,1632.96
+Garou: Mark of the Wolves,Fighting Game,10,3,513.71
+Guilty Gear,Fighting Game,3,1,32.0
+Guilty Gear Xrd -REVELATOR-,Fighting Game,61,19,36437.43
+Guilty Gear Xrd -SIGN-,Fighting Game,80,38,37445.66
+Guilty Gear Xrd REV 2,Fighting Game,98,48,116554.7
+Guilty Gear XX,Fighting Game,5,2,0.0
+Guilty Gear XX #Reload,Fighting Game,3,1,0.0
+Guilty Gear XX Accent Core,Fighting Game,33,4,10365.0
+Guilty Gear XX Accent Core Plus,Fighting Game,3,1,0.0
+Guilty Gear XX Accent Core Plus R,Fighting Game,61,19,4640.0
+Guilty Gear XX Slash,Fighting Game,6,2,10250.0
+Hokuto no Ken,Fighting Game,3,1,145.0
+Hyper Street Fighter II,Fighting Game,8,1,10250.0
+Injustice 2,Fighting Game,81,37,835742.83
+Injustice: Gods Among Us,Fighting Game,101,117,35176.89
+Kill la Kill the Game: IF,Fighting Game,9,3,770.0
+Killer Instinct (2013),Fighting Game,126,52,224416.96
+King of Fighters 2002 Unlimited Match,Fighting Game,6,2,760.0
+King of Fighters 98,Fighting Game,7,3,7945.57
+King of Fighters XI,Fighting Game,3,1,25.0
+King of Fighters XIII,Fighting Game,107,43,44724.28
+King of Fighters XIV,Fighting Game,88,36,72892.09
+Koihime Enbu,Fighting Game,12,5,1615.0
+Lethal League Blaze,Fighting Game,13,6,1872.9
+Marvel vs. Capcom 2,Fighting Game,58,27,39050.0
+Marvel vs. Capcom 3,Fighting Game,38,12,22343.62
+Marvel vs. Capcom: Infinite,Fighting Game,49,19,42482.12
+Melty Blood: Actress Again,Fighting Game,10,2,0.0
+Melty Blood: Actress Again Current Code,Fighting Game,33,11,6135.0
+Million Arthur: Arcana Blood,Fighting Game,6,2,7420.0
+Mordhau,Fighting Game,0,1,123.0
+Mortal Kombat 11,Fighting Game,158,37,392602.33
+Mortal Kombat 9,Fighting Game,67,26,136891.67
+Mortal Kombat vs. DC Universe,Fighting Game,3,1,0.0
+Mortal Kombat X,Fighting Game,100,62,523532.42
+Mortal Kombat XL,Fighting Game,50,17,129203.79
+Mystery Game Tournament,Fighting Game,56,8,10995.0
+Naruto Shippuden: Ultimate Ninja Storm 4,Fighting Game,7,5,4550.0
+Nitroplus Blasterz: Heroines Infinite Duel,Fighting Game,10,4,1994.0
+Persona 4 Arena,Fighting Game,42,11,6336.63
+Persona 4 Arena Ultimax,Fighting Game,58,19,18828.16
+Pokkén Tournament,Fighting Game,62,25,77016.66
+Pokkén Tournament DX,Fighting Game,41,25,20075.4
+Power Rangers: Battle for the Grid,Fighting Game,6,2,1050.0
+Power Rangers: Legacy Wars,Fighting Game,2,1,4178.55
+Project Justice,Fighting Game,3,1,165.0
+Project M,Fighting Game,560,335,205292.09
+Rising Thunder,Fighting Game,3,1,1000.0
+Rivals of Aether,Fighting Game,38,12,37587.0
+Sailor Moon S,Fighting Game,15,10,3191.19
+Samurai Shodown (2019),Fighting Game,58,15,68009.91
+Samurai Shodown V Special,Fighting Game,13,4,490.11
+Shovel Knight Showdown,Fighting Game,3,1,60.0
+Skullgirls,Fighting Game,3,1,300.0
+Skullgirls 2nd Encore,Fighting Game,33,11,17871.0
+Skullgirls Encore,Fighting Game,37,13,9155.4
+SNK Heroines: Tag Team Frenzy,Fighting Game,3,1,430.0
+Soul Calibur II,Fighting Game,15,7,4790.0
+Soul Calibur II HD Online,Fighting Game,29,5,945.41
+Soul Calibur IV,Fighting Game,4,3,100260.0
+Soul Calibur V,Fighting Game,78,26,60008.54
+Soul Calibur VI,Fighting Game,96,36,94795.21
+Street Fighter Alpha 2,Fighting Game,17,8,1390.0
+Street Fighter Alpha 3,Fighting Game,15,4,300.0
+Street Fighter EX2 Plus,Fighting Game,5,2,350.0
+Street Fighter III: 3rd Strike,Fighting Game,81,34,49278.86
+Street Fighter IV,Fighting Game,41,12,7938.22
+Street Fighter V,Fighting Game,233,120,2202726.43
+Street Fighter V: Arcade Edition,Fighting Game,229,100,2017135.95
+Street Fighter V: Champion Edition,Fighting Game,4,1,1000.0
+Street Fighter X Tekken,Fighting Game,115,93,84090.64
+Super Smash Bros.,Fighting Game,233,121,68042.81
+Super Smash Bros. Brawl,Fighting Game,499,344,246715.83
+Super Smash Bros. for Wii U,Fighting Game,1264,1022,1511976.47
+Super Smash Bros. Melee,Fighting Game,1875,2604,3181748.69
+Super Smash Bros. Ultimate,Fighting Game,1826,1124,1269343.66
+Super Street Fighter II Turbo,Fighting Game,104,44,23678.05
+Super Street Fighter II Turbo HD Remix,Fighting Game,29,8,16360.0
+Super Street Fighter IV,Fighting Game,40,16,20877.3
+Super Street Fighter IV Arcade Edition,Fighting Game,153,202,343878.08
+Tatsunoko vs. Capcom: Ultimate All-Stars,Fighting Game,13,8,1330.81
+Teenage Mutant Ninja Turtles: Tournament Fighters,Fighting Game,7,2,820.0
+Tekken 4,Fighting Game,4,4,12500.0
+Tekken 5,Fighting Game,10,9,10250.0
+Tekken 5: Dark Resurrection,Fighting Game,18,5,12180.0
+Tekken 6,Fighting Game,59,30,119874.64
+Tekken 7,Fighting Game,384,194,1591294.05
+Tekken Tag Tournament,Fighting Game,7,4,0.0
+Tekken Tag Tournament 2,Fighting Game,142,138,125965.7
+Them's Fightin' Herds,Fighting Game,3,1,190.0
+TowerFall: Ascension,Fighting Game,0,0,0.0
+Ultimate Marvel vs. Capcom 3,Fighting Game,190,169,116733.16
+Ultimate Mortal Kombat 3,Fighting Game,6,2,150.0
+Ultra Fight Da! Kyanta 2,Fighting Game,3,1,320.0
+Ultra Street Fighter IV,Fighting Game,226,227,816673.46
+Umineko: Golden Fantasia,Fighting Game,3,1,90.0
+Under Night In-Birth EXE: Late,Fighting Game,52,23,6025.76
+Under Night In-Birth EXE: Late[st],Fighting Game,98,34,46553.33
+Under Night In-Birth Exe:Late[cl-r],Fighting Game,4,1,1000.0
+Vampire Savior,Fighting Game,27,15,8038.74
+Virtua Fighter 4: Evolution,Fighting Game,6,3,0.0
+Virtua Fighter 5,Fighting Game,14,7,39830.0
+Virtua Fighter 5 Final Showdown,Fighting Game,28,6,573.77
+WWE 2K20,Fighting Game,20,2,50000.0
+Asphalt 4,Racing,5,2,29500.0
+Asphalt 9: Legends,Racing,5,2,51520.0
+Assetto Corsa,Racing,68,25,164776.1
+Assetto Corsa Competizione,Racing,0,0,0.0
+Dirt Rally 2.0,Racing,5,2,10000.0
+F1 2018,Racing,21,1,200000.0
+F1 2019,Racing,25,2,538047.38
+Forza Motorsport 2,Racing,17,2,222000.0
+Forza Motorsport 3,Racing,3,2,11000.0
+Forza Motorsport 4,Racing,2,1,132.37
+Forza Motorsport 6,Racing,35,9,42350.0
+Forza Motorsport 7,Racing,102,9,645200.0
+Gran Turismo 3: A-Spec,Racing,4,2,3250.0
+Gran Turismo 4,Racing,5,2,44000.0
+Gran Turismo Sport,Racing,9,2,4020.0
+GRID (2019),Racing,3,1,218.75
+iRacing.com,Racing,620,82,882787.78
+KartRider,Racing,76,20,567366.35
+Live for Speed,Racing,16,8,9219.14
+Mad Skills Motocross 2,Racing,12,1,20163.0
+Mario Kart 8 Deluxe,Racing,30,4,1754.44
+NASCAR Thunder 2002,Racing,0,1,7679.25
+NASCAR Thunder 2003,Racing,0,1,5933.5
+Need for Speed Carbon,Racing,12,4,36322.58
+Need for Speed: Most Wanted,Racing,18,7,35694.54
+Need for Speed: ProStreet,Racing,12,3,32208.46
+Need for Speed: Shift,Racing,3,1,10500.0
+Need for Speed: Underground,Racing,3,1,35000.0
+Need for Speed: Underground 2,Racing,6,3,35000.0
+Project Cars,Racing,39,109,41523.71
+Project Cars 2,Racing,37,22,66150.0
+Project Gotham Racing 2,Racing,4,2,35000.0
+Project Gotham Racing 3,Racing,33,10,297286.85
+Project Gotham Racing 4,Racing,5,4,25208.46
+RaceRoom Racing Experience,Racing,142,17,85218.7
+rFactor 2,Racing,137,29,1156950.81
+Trackmania (2020),Racing,0,0,0.0
+TrackMania 2: Canyon,Racing,19,35,19728.02
+TrackMania 2: Stadium,Racing,335,272,197812.94
+Trackmania 2: Valley,Racing,6,2,779.34
+TrackMania Nations,Racing,12,6,114000.0
+TrackMania Nations Forever,Racing,95,54,124520.79
+Trackmania Turbo,Racing,3,1,566.91
+Trackmania United,Racing,3,1,1027.5
+Trackmania United Forever,Racing,0,0,0.0
+Trials Fusion,Racing,0,0,0.0
+Turbo Racing League,Racing,16,9,1000000.0
+Carom 3D,Sports,11,4,60500.0
+Dream league Soccer,Sports,0,0,0.0
+FIFA 03,Sports,10,3,54066.44
+FIFA 04,Sports,3,3,40000.0
+FIFA 05,Sports,5,8,57728.01
+FIFA 06,Sports,21,10,110764.53
+FIFA 07,Sports,42,13,237812.23
+FIFA 08,Sports,68,17,207129.94
+FIFA 09,Sports,52,19,121618.34
+FIFA 10,Sports,64,48,117026.71
+FIFA 11,Sports,72,78,93983.77
+FIFA 12,Sports,53,66,54431.52
+FIFA 13,Sports,53,62,458427.82
+FIFA 14,Sports,57,69,96347.81
+FIFA 15,Sports,169,352,144373.99
+FIFA 16,Sports,61,28,117828.11
+FIFA 17,Sports,156,48,1482612.63
+FIFA 18,Sports,238,48,2233697.69
+FIFA 19,Sports,303,48,3242642.34
+FIFA 20,Sports,239,38,1068673.72
+FIFA 2000,Sports,4,1,50000.0
+FIFA 2001,Sports,9,2,46000.0
+FIFA 2002 World Cup,Sports,8,1,43000.0
+FIFA Online 3,Sports,89,9,1434341.9
+FIFA Online 4,Sports,84,4,679240.0
+Guitar Hero 5,Sports,3,1,10500.0
+Guitar Hero III: Legends of Rock,Sports,8,2,19000.0
+Guitar Hero: World Tour,Sports,0,0,0.0
+Just Dance 2014,Sports,3,1,0.0
+Madden NFL 19,Sports,5,3,125000.0
+Madden NFL 2004,Sports,3,1,1500.0
+Madden NFL 2006,Sports,1,1,100000.0
+Madden NFL 2007,Sports,1,1,100000.0
+Madden NFL 2008,Sports,1,1,100000.0
+Madden NFL 2009,Sports,1,1,100000.0
+Madden NFL 2013,Sports,8,1,400000.0
+Madden NFL 2016,Sports,8,1,50000.0
+Madden NFL 2017,Sports,42,5,1004000.0
+Madden NFL 2018,Sports,40,3,279676.62
+Mario Tennis Aces,Sports,3,1,51.3
+NBA 2K Online,Sports,0,0,0.0
+NBA 2K18,Sports,91,4,1000000.0
+NBA 2K19,Sports,0,0,0.0
+NHL '94,Sports,25,8,3818.56
+NHL 12,Sports,6,2,702.93
+NHL 13,Sports,1,1,70000.0
+NHL 14,Sports,6,3,3023.96
+NHL 15,Sports,3,3,3157.16
+NHL 17,Sports,0,0,0.0
+NHL 18,Sports,20,6,102700.0
+NHL 19,Sports,10,8,22566.67
+Pro Evolution Soccer 2008,Sports,6,3,2084.15
+Pro Evolution Soccer 2009,Sports,5,2,1395.97
+Pro Evolution Soccer 2013,Sports,0,0,0.0
+Pro Evolution Soccer 2014,Sports,4,1,29410.25
+Pro Evolution Soccer 2015,Sports,3,1,26544.76
+Pro Evolution Soccer 2016,Sports,17,6,27243.84
+Pro Evolution Soccer 2017,Sports,39,16,514697.71
+Pro Evolution Soccer 2018,Sports,20,3,250000.0
+Pro Evolution Soccer 2019,Sports,25,2,216000.0
+Pro Evolution Soccer 3,Sports,8,2,25000.0
+Pro Evolution Soccer 4,Sports,11,2,40550.64
+Pro Evolution Soccer 5,Sports,4,1,32000.0
+Pro Evolution Soccer 6,Sports,5,2,20216.82
+Rocket League,Sports,967,1033,8972093.01
+Soccer Stars,Sports,0,0,0.0
+Artifact,Collectible Card Game,275,164,118813.09
+Faeria,Collectible Card Game,0,0,0.0
+Gwent,Collectible Card Game,315,108,798757.17
+Hand of the Gods,Collectible Card Game,48,36,94434.2
+Hearthstone,Collectible Card Game,2364,876,21655336.92
+Legends of Runeterra,Collectible Card Game,6,2,13203.89
+Magic: The Gathering Arena,Collectible Card Game,232,36,5512000.0
+Magic: The Gathering Online,Collectible Card Game,130,10,1218000.0
+Pokémon TCG,Collectible Card Game,0,0,0.0
+Shadowverse,Collectible Card Game,239,42,3211177.09
+Shardbound,Collectible Card Game,0,0,0.0
+The Elder Scrolls: Legends,Collectible Card Game,3,1,5000.0
+Yu-Gi-Oh! Duel Links,Collectible Card Game,328,219,48746.72
+Catherine,Puzzle Game,9,6,1470.0
+Catherine: Full Body,Puzzle Game,3,1,185.0
+Magical Drop III,Puzzle Game,3,1,130.0
+Pac-man,Puzzle Game,0,0,0.0
+Puyo Puyo Champions,Puzzle Game,9,3,2071.8
+Puyo Puyo Tetris,Puzzle Game,26,11,2346.84
+Tetris,Puzzle Game,21,5,15500.0
+Tetris Ultimate,Puzzle Game,3,1,221.0
+Wise Star 2,Puzzle Game,3,1,12000.0
+Apex Legends,Battle Royale,1025,140,3654352.64
+Fortnite,Battle Royale,3352,564,90037277.34
+Free Fire,Battle Royale,257,11,748284.76
+H1Z1,Battle Royale,119,13,2067122.0
+PLAYERUNKNOWN'S BATTLEGROUNDS Mobile,Battle Royale,951,37,3722653.07
+PLAYERUNKNOWN’S BATTLEGROUNDS,Battle Royale,2724,288,22536578.57
+Ring of Elysium,Battle Royale,9,4,70000.0
+Rules Of Survival,Battle Royale,0,0,0.0
+Gears 5,Third-Person Shooter,72,4,500000.0
+Gears of War,Third-Person Shooter,33,18,252195.57
+Gears of War 2,Third-Person Shooter,0,5,135000.0
+Gears of War 3,Third-Person Shooter,13,4,7255.81
+Gears of War 4,Third-Person Shooter,135,41,3087285.0
+Gears of War: Ultimate Edition,Third-Person Shooter,39,3,170000.0
