@@ -12,6 +12,7 @@ earningsCountry = pd.read_csv(
     '../scrapy/earningsByCountry/earningsCountry_players.csv')
 countryEarnings = pd.read_csv('../scrapy/countryEarnings/countryEarnings.csv')
 femalePlayers = pd.read_csv('../scrapy/femalePlayers/femalePlayers.csv')
+earningsU18 = pd.read_csv('../scrapy/earningsU18/U18_players.csv')
 
 #=============================================================================#
 # plot1 - countries ranking by total earnings
@@ -27,6 +28,7 @@ countriesRankingEarnings_plot = sns.barplot(
     x="totalOverall", y="country", data=countriesRankingEarnings, color='g')
 plt.xlabel('Purchase amount', fontsize=18)
 countriesRankingEarnings_plot.set(xlabel='Total Earnings in US$', ylabel='')
+
 plt.savefig('../shiny/www/images/countriesEarnings.png')
 
 #=============================================================================#
@@ -46,6 +48,7 @@ topPlayers_plot = plt.bar(
     topPlayers_df['playerID'], topPlayers_df['totalOverall'])
 plt.xlabel('Player in-game ID')
 plt.ylabel('Earnings US$')
+
 plt.savefig('../shiny/www/images/topPlayers.png')
 
 
@@ -54,6 +57,7 @@ plt.savefig('../shiny/www/images/topPlayers.png')
 plt.figure(figsize=(12, 6))
 earningsCountry.groupby('game')['totalOverall'].sum().sort_values(
     ascending=False).head(20).plot.bar(color='r')
+
 plt.savefig('../shiny/www/images/topGames_prizepool.png')
 
 
@@ -83,4 +87,21 @@ fig1, ax1 = plt.subplots()
 ax1.pie(sizes, explode=explode, labels=labels, autopct=lambda p: '${:,.2f}'.format(p * total / 100), colors=colors,
         shadow=True, startangle=90)
 ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
 plt.savefig('../shiny/www/images/menVSwomen_earnings.png')
+
+
+#=============================================================================#
+# plot8 - U18 earnings
+# ---------prepare data
+U18earnings_df = earningsU18[['playerID', 'totalOverall', 'totalU18']]
+U18earnings_df['totalOver18'] = U18earnings_df['totalOverall'] - \
+    U18earnings_df['totalU18']
+
+# ---------plot
+plt.figure(figsize=(12, 6))
+plt.bar(U18earnings_df.playerID.head(10), U18earnings_df.totalU18.head(10))
+plt.bar(U18earnings_df.playerID.head(10), U18earnings_df.totalOver18.head(10),
+        bottom=U18earnings_df.totalU18.head(10))
+
+plt.savefig('../shiny/www/images/U18_earnings.png')
