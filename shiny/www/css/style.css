@@ -2463,12 +2463,12 @@ h3 {
 
 /* line 2, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_prising.scss */
 .prise_area .col-xl-4:nth-child(1) .single_prise:before {
-  background-image: url(../img/prise/2.png);
+  background-image: url(../img/lol.jpg);
 }
 
 /* line 5, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_prising.scss */
 .prise_area .col-xl-4:nth-child(3) .single_prise:before {
-  background-image: url(../img/prise/3.png);
+  background-image: url(../img/fortnite.jpg);
 }
 
 /* line 8, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_prising.scss */
@@ -2580,7 +2580,7 @@ h3 {
 
 /* line 70, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_prising.scss */
 .prise_area .single_prise:before {
-  background-image: url(../img/prise/1.png);
+  background-image: url(../img/dota2.png);
   left: 0;
   top: 0;
   width: 100%;
