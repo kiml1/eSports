@@ -2,4 +2,9 @@ earningsCountry_players.csv
 eSports_players.csv
 countryEarnings.csv
 femalePlayers.csv
+U18_players.csv
+gameRankings.csv
+offlineTournaments.csv
+onlineTournaments.csv
+tournamentsHistory.csv
 .Rhistory
