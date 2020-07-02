@@ -17,6 +17,10 @@ femalePlayers = pd.read_csv('../scrapy/femalePlayers/femalePlayers.csv')
 earningsU18 = pd.read_csv('../scrapy/earningsU18/U18_players.csv')
 gamesRankings = pd.read_csv('../scrapy/gameRankings/gameRankings.csv')
 steamCharts = pd.read_csv('../shiny/www/data/steamCharts.csv')
+offlineTournaments = pd.read_csv(
+    '../scrapy/offlineTournaments/offlineTournaments.csv')
+onlineTournaments = pd.read_csv(
+    '../scrapy/onlineTournaments/onlineTournaments.csv')
 
 # plots fonts
 osaka = {'fontname': 'Osaka'}
@@ -326,4 +330,47 @@ ax.set_xticklabels(playersGenres.genre, rotation=60, fontdict={
                    'horizontalalignment': 'right', 'size': 12})
 plt.xticks(fontsize=16)
 plt.yticks(fontsize=16)
+plt.show()
+
+
+#=============================================================================#
+# plot13 - offline and online performances
+
+onlineTournamentsMinus = onlineTournaments.assign(
+    results=lambda x: x.results*-1)
+
+offOnPerformance = pd.merge(
+    offlineTournaments, onlineTournamentsMinus, how='inner', on='playerID')
+offOnPerformance = offOnPerformance[['results_x', 'playerID', 'results_y']]
+offOnPerformance = offOnPerformance.rename(
+    columns={"results_x": "offline", "results_y": "online"})
+offOnPerformance = offOnPerformance.melt(id_vars=[
+    'playerID'], value_vars=['offline', 'online'])
+
+top5offline = offOnPerformance[offOnPerformance.variable == 'offline'].sort_values(
+    by='value')['playerID'][-5:].tolist()
+top5online = offOnPerformance[offOnPerformance.variable == 'online'].sort_values(
+    by='value')['playerID'][:5].tolist()
+toplist = top5offline + top5online
+
+offOnPerformance = offOnPerformance[offOnPerformance.playerID.isin(toplist)]
+
+# Draw Plot
+plt.figure(figsize=(13, 10), dpi=80)
+group_col = 'variable'
+order_of_bars = df.Stage.unique()[::-1]
+colors = [plt.cm.Spectral(i/float(len(offOnPerformance[group_col].unique())-1))
+          for i in range(len(offOnPerformance[group_col].unique()))]
+
+for c, group in zip(colors, offOnPerformance[group_col].unique()):
+    sns.barplot(x='value', y='playerID',
+                data=offOnPerformance.loc[offOnPerformance[group_col] == group, :], color=c, label=group)
+
+# Decorations
+plt.xlabel("Number of tournaments", fontsize=16)
+plt.ylabel("")
+plt.yticks(fontsize=16)
+plt.title("Tournament earnings", fontsize=22)
+plt.xticks(fontsize=16)
+plt.legend(fontsize=14)
 plt.show()
