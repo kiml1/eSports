@@ -197,17 +197,17 @@ h3 {
 
 /* line 130, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/theme-default.scss */
 .bg-img-1 {
-  background-image: url(../img/slider/slider-img-1.jpg);
+  background-image: url(../img/eSports_cover.jpg);
 }
 
 /* line 133, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/theme-default.scss */
 .bg-img-2 {
-  background-image: url(../img/background-img/bg-img-2.jpg);
+  background-image: url(../img/eSports_cover.jpg);
 }
 
 /* line 136, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/theme-default.scss */
 .cta-bg-1 {
-  background-image: url(../img/background-img/bg-img-3.jpg);
+  background-image: url(../img/eSports_cover.jpg);
 }
 
 /* line 141, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/theme-default.scss */
@@ -1423,7 +1423,7 @@ h3 {
 
 /* line 4, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url(../img/banner/banner2.png);
+  background-image: url(../img/eSports_cover.png);
 }
 
 /* line 7, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_slider.scss */
@@ -1826,7 +1826,7 @@ h3 {
 
 /* line 279, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_slider.scss */
 .property_bg {
-  background-image: url(../img/banner/property.png);
+  background-image: url(../img/eSports_cover.jpg);
 }
 
 /* line 2, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_about.scss */
@@ -1989,7 +1989,7 @@ h3 {
 
 /* line 29, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_counter.scss */
 .home_details {
-  background-image: url(../img/banner/home_details.png);
+  background-image: url(../img/eSports_cover.jpg);
   background-size: cover;
   background-position: center center;
   padding: 140px 0;
@@ -2294,7 +2294,7 @@ h3 {
 
 /* line 2, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_testmonial.scss */
 .testimonial_area {
-  background-image: url(../img/banner/testmonial.png);
+  background-image: url(../img/eSports_cover.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -5473,22 +5473,22 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 /* line 1, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_bradcam.scss */
 .bradcam_bg_1 {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(../img/eSports_cover.jpg);
 }
 
 /* line 4, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_bradcam.scss */
 .bradcam_bg_2 {
-  background-image: url(../img/banner/bradcam2.png);
+  background-image: url(../img/eSports_cover.jpg);
 }
 
 /* line 7, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_bradcam.scss */
 .bradcam_bg_3 {
-  background-image: url(../img/banner/bradcam3.png);
+  background-image: url(../img/eSports_cover.jpg);
 }
 
 /* line 10, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_bradcam.scss */
 .bradcam_bg_4 {
-  background-image: url(../img/banner/details.png);
+  background-image: url(../img/eSports_cover.jpg);
 }
 
 /* line 13, ../../Arafath/CL/Cl November/224. Interior Design/HTML/scss/_bradcam.scss */

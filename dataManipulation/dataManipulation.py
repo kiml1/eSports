@@ -21,6 +21,8 @@ offlineTournaments = pd.read_csv(
     '../scrapy/offlineTournaments/offlineTournaments.csv')
 onlineTournaments = pd.read_csv(
     '../scrapy/onlineTournaments/onlineTournaments.csv')
+statsHistory = pd.read_csv(
+    '../scrapy/tournamentsHistory/tournamentsHistory.csv')
 
 # plots fonts
 osaka = {'fontname': 'Osaka'}
@@ -190,22 +192,21 @@ plt.savefig('../shiny/www/images/U18_earnings.png')
 
 #=============================================================================#
 # plot9 - prize pool evolution history
-prizepoolHistory = earningsHistory.groupby(
-    earningsHistory.year).sum().reset_index()
-
 # Draw plot
 fig, ax = plt.subplots(figsize=(16, 10), dpi=80)
-ax.hlines(y=prizepoolHistory.index, xmin=0, xmax=150, color='gray',
+ax.hlines(y=statsHistory.index, xmin=0, xmax=250, color='gray',
           alpha=0.7, linewidth=1, linestyles='dashdot')
-ax.scatter(y=prizepoolHistory.index, x=prizepoolHistory.totalYear/1e6,
-           s=75, color='firebrick', alpha=0.7)
+ax.scatter(y=statsHistory.index, x=statsHistory.totalPrize/1e6,
+           s=75, color='#f73a18', alpha=0.7)
 
 # Title, Label, Ticks and Ylim
 ax.set_title('Prize pool by Year', fontdict={'size': 22})
-ax.set_xlabel('Prize pool million US$')
-ax.set_yticks(prizepoolHistory.index)
-ax.set_yticklabels(prizepoolHistory.year, fontdict={
-                   'horizontalalignment': 'right'})
+ax.set_yticks(statsHistory.index)
+ax.set_yticklabels(statsHistory.year, fontdict={
+                   'horizontalalignment': 'right', 'size': 16})
+plt.yticks(fontsize=16)
+plt.xticks(fontsize=16)
+plt.xlabel('Prize pool million US$', fontsize=16)
 plt.show()
 
 
@@ -358,9 +359,7 @@ offOnPerformance = offOnPerformance[offOnPerformance.playerID.isin(toplist)]
 # Draw Plot
 plt.figure(figsize=(13, 10), dpi=80)
 group_col = 'variable'
-order_of_bars = df.Stage.unique()[::-1]
-colors = [plt.cm.Spectral(i/float(len(offOnPerformance[group_col].unique())-1))
-          for i in range(len(offOnPerformance[group_col].unique()))]
+colors = ['#f73a18', '#1a2139']
 
 for c, group in zip(colors, offOnPerformance[group_col].unique()):
     sns.barplot(x='value', y='playerID',
@@ -373,4 +372,62 @@ plt.yticks(fontsize=16)
 plt.title("Tournament earnings", fontsize=22)
 plt.xticks(fontsize=16)
 plt.legend(fontsize=14)
+plt.show()
+
+
+#=============================================================================#
+# plot14 - tournament stats
+meanMedianPlayers = statsHistory[[
+    'year', 'meanEarningsPlayers', 'medianEarningsPlayers']].sort_values('year')
+meanMedianPlayers = meanMedianPlayers[meanMedianPlayers.year < 2020]
+
+# Define the upper limit, lower limit, interval of Y axis and colors
+mycolors = ['#f73a18', '#1a2139']
+
+# Draw Plot and Annotate
+fig, ax = plt.subplots(1, 1, figsize=(16, 9))
+
+columns = meanMedianPlayers.columns[1:]
+for i, column in enumerate(columns):
+    plt.plot(meanMedianPlayers.year,
+             meanMedianPlayers[column].values, lw=1.5, color=mycolors[i], ls='solid')
+
+# Decorations
+ax.legend(['Mean Earnings/Player', 'Median Earnings/Player'], fontsize=14)
+plt.title('Mean and median earnigns per player', fontsize=22)
+plt.xticks(fontsize=16)
+plt.yticks(fontsize=16)
+plt.xlabel("Year", fontsize=16)
+plt.ylabel("US$", fontsize=16)
+plt.grid(alpha=.4)
+plt.show()
+
+
+#=============================================================================#
+# plot15 - tournament stats
+meanMedianTourn = statsHistory[[
+    'year', 'meanTournamentPrizePool', 'medianTournamentPrizePool']].sort_values('year')
+meanMedianTourn = meanMedianTourn[meanMedianTourn.year < 2020]
+
+# Define the upper limit, lower limit, interval of Y axis and colors
+mycolors = ['#f73a18', '#1a2139']
+
+# Draw Plot and Annotate
+fig, ax = plt.subplots(1, 1, figsize=(16, 9))
+
+columns = meanMedianTourn.columns[1:]
+for i, column in enumerate(columns):
+    plt.plot(meanMedianTourn.year,
+             meanMedianTourn[column].values, lw=1.5, color=mycolors[i])
+
+
+# Decorations
+ax.legend(['Mean Prize pool/Tournament',
+           'Median Prize pool/Tournament'], fontsize=14)
+plt.title('Mean and median prize pools per tournament', fontsize=22)
+plt.xticks(fontsize=16)
+plt.yticks(fontsize=16)
+plt.xlabel("Year", fontsize=16)
+plt.ylabel("US$", fontsize=16)
+plt.grid(alpha=.4)
 plt.show()
