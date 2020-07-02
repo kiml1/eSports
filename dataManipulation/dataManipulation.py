@@ -5,6 +5,7 @@ import seaborn as sns
 from matplotlib.ticker import FuncFormatter
 import numpy
 import squarify
+import matplotlib.lines as mlines
 
 
 # import data sets
@@ -162,12 +163,12 @@ plt.savefig('../shiny/www/images/menVSwomen_earnings.png')
 
 #=============================================================================#
 # plot8 - U18 earnings
-# ---------prepare data
+# prepare data
 U18earnings_df = earningsU18[['playerID', 'totalOverall', 'totalU18']]
 U18earnings_df['totalOver18'] = U18earnings_df['totalOverall'] - \
     U18earnings_df['totalU18']
 
-# ---------plot
+# plot
 plt.figure(figsize=(16, 10))
 
 p1 = plt.bar(U18earnings_df.playerID.head(
@@ -184,6 +185,145 @@ plt.savefig('../shiny/www/images/U18_earnings.png')
 
 
 #=============================================================================#
-# plot9 - top game by year
-plt.figure(figsize=(12, 6))
-earningsHistory.groupby('year')['totalOverall', 'game']
+# plot9 - prize pool evolution history
+prizepoolHistory = earningsHistory.groupby(
+    earningsHistory.year).sum().reset_index()
+
+# Draw plot
+fig, ax = plt.subplots(figsize=(16, 10), dpi=80)
+ax.hlines(y=prizepoolHistory.index, xmin=0, xmax=150, color='gray',
+          alpha=0.7, linewidth=1, linestyles='dashdot')
+ax.scatter(y=prizepoolHistory.index, x=prizepoolHistory.totalYear/1e6,
+           s=75, color='firebrick', alpha=0.7)
+
+# Title, Label, Ticks and Ylim
+ax.set_title('Prize pool by Year', fontdict={'size': 22})
+ax.set_xlabel('Prize pool million US$')
+ax.set_yticks(prizepoolHistory.index)
+ax.set_yticklabels(prizepoolHistory.year, fontdict={
+                   'horizontalalignment': 'right'})
+plt.show()
+
+
+#=============================================================================#
+# plot10 - country earnings now and then
+years = [2009, 2019]
+countryPrizepoolHistory = earningsHistory.groupby([
+    earningsHistory.year, earningsHistory.country]).sum().reset_index()
+countryPrizepoolHistory = countryPrizepoolHistory[countryPrizepoolHistory.year.isin(
+    years)]
+countryPrizepoolHistory = countryPrizepoolHistory.drop(
+    columns=['totalOverall'])
+countryPrizepoolHistory = countryPrizepoolHistory.set_index('country')
+countryPrizepoolHistory = countryPrizepoolHistory.pivot(
+    columns='year', values='totalYear')
+countryPrizepoolHistory = countryPrizepoolHistory.reset_index()
+countryPrizepoolHistory = countryPrizepoolHistory.dropna()
+
+# draw line
+
+
+def newline(p1, p2, color='black'):
+    ax = plt.gca()
+    l = mlines.Line2D([p1[0], p2[0]], [p1[1], p2[1]], color='red' if p1[1] -
+                      p2[1] > 0 else 'green', marker='o', markersize=6)
+    ax.add_line(l)
+    return l
+
+
+fig, ax = plt.subplots(1, 1, figsize=(14, 14), dpi=80)
+
+# Vertical Lines
+ax.vlines(x=1, ymin=500, ymax=13000, color='black',
+          alpha=0.7, linewidth=1, linestyles='dotted')
+ax.vlines(x=3, ymin=500, ymax=13000, color='black',
+          alpha=0.7, linewidth=1, linestyles='dotted')
+
+# Points
+ax.scatter(y=countryPrizepoolHistory[2009], x=np.repeat(1, countryPrizepoolHistory.shape[0]),
+           s=10, color='black', alpha=0.7)
+ax.scatter(y=countryPrizepoolHistory[2019], x=np.repeat(3, countryPrizepoolHistory.shape[0]),
+           s=10, color='black', alpha=0.7)
+
+# Line Segmentsand Annotation
+for p1, p2, c in zip(countryPrizepoolHistory[2009], countryPrizepoolHistory[2019], countryPrizepoolHistory['country']):
+    newline([1, p1], [3, p2])
+    ax.text(1-0.05, p1, c + ', ' + str(round(p1)), horizontalalignment='right',
+            verticalalignment='center', fontdict={'size': 14})
+    ax.text(3+0.05, p2, c + ', ' + str(round(p2)), horizontalalignment='left',
+            verticalalignment='center', fontdict={'size': 14})
+
+# 'Before' and 'After' Annotations
+ax.text(1-0.05, 13000, '', horizontalalignment='right',
+        verticalalignment='center', fontdict={'size': 18, 'weight': 700})
+ax.text(3+0.05, 13000, '', horizontalalignment='left',
+        verticalalignment='center', fontdict={'size': 18, 'weight': 700})
+
+# Decoration
+ax.set_title("Slopechart: Comparing GDP Per Capita between 1952 vs 1957",
+             fontdict={'size': 22})
+ax.set(xlim=(0, 4), ylim=(0, 14000), ylabel='Mean GDP Per Capita')
+ax.set_xticks([1, 3])
+ax.set_xticklabels(["2009", "2019"])
+plt.yticks(np.arange(0, 25e6, 1e6), fontsize=12)
+
+# Lighten borders
+plt.gca().spines["top"].set_alpha(.0)
+plt.gca().spines["bottom"].set_alpha(.0)
+plt.gca().spines["right"].set_alpha(.0)
+plt.gca().spines["left"].set_alpha(.0)
+plt.show()
+
+
+#=============================================================================#
+# plot11 - scatter prizepool numbertournaments genre
+# Prepare Data
+prizeTournaments = gamesRankings.groupby('genre').sum().reset_index()
+prizeTournaments = prizeTournaments.assign(
+    totalOverall=lambda x: x.totalOverall / 1e6)
+
+# Create as many colors as there are unique genre
+genres = np.unique(prizeTournaments['genre'])
+colors = [plt.cm.tab10(i/float(len(genres)-1))
+          for i in range(len(genres))]
+
+# Draw Plot for Each Category
+plt.figure(figsize=(16, 10), dpi=80, facecolor='w', edgecolor='k')
+
+for i, genre in enumerate(genres):
+    plt.scatter('numberTournaments', 'totalOverall',
+                data=prizeTournaments.loc[prizeTournaments.genre == genre, :],
+                s=400, c=colors[i], label=str(genre))
+
+# Decorations
+plt.xlabel('Tournaments', fontsize=16)
+plt.ylabel('Prize pool millions US$', fontsize=16)
+
+plt.xticks(fontsize=16)
+plt.yticks(fontsize=16)
+plt.title("Scatterplot of Tournaments vs Prize pool", fontsize=22)
+plt.legend(fontsize=16)
+plt.show()
+
+
+#=============================================================================#
+# plot12 - popular genres by number of players
+# Prepare Data
+playersGenres = gamesRankings.groupby('genre').sum().reset_index()
+
+# Draw plot
+fig, ax = plt.subplots(figsize=(16, 10), dpi=80)
+ax.vlines(x=playersGenres.index, ymin=0, ymax=playersGenres.numberPlayers,
+          color='#ff1200', alpha=0.7, linewidth=2)
+ax.scatter(x=playersGenres.index, y=playersGenres.numberPlayers,
+           s=75, color='firebrick', alpha=0.7)
+
+# Title, Label, Ticks and Ylim
+ax.set_title('Number of players for genres', fontdict={'size': 22})
+plt.ylabel('Number of players', fontsize=16)
+ax.set_xticks(playersGenres.index)
+ax.set_xticklabels(playersGenres.genre, rotation=60, fontdict={
+                   'horizontalalignment': 'right', 'size': 12})
+plt.xticks(fontsize=16)
+plt.yticks(fontsize=16)
+plt.show()
