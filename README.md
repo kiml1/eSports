@@ -1,4 +1,4 @@
-<a href="https://kiml1.shinyapps.io/olympian/"><img src="https://lh3.googleusercontent.com/proxy/6xAUSfBeKHE3Fe5jAFsFqn1-g6hkqj-I_WnTJJ_A8Rx5G3RB9wqwX64vLhv76QoZfaVQtIFKavsCBKsGBXG5sTS6jAbc" alt="eSports cover"></a>
+<a href="https://kiml1.shinyapps.io/eSports/"><img src="https://theblockchainland.com/wp-content/uploads/2019/10/Blockchain-future-esports-blockchainLand-e1571328984494-1170x522.jpg" alt="eSports cover"></a>
 
 # eSports
 A small data science project that aims to explore the earnings in the industry of eSports.<br>
@@ -17,7 +17,7 @@ Shiny app UI was made in <b>JavaScript</b>, <b>HTML</b> and <b>CSS</b>. Template
 
 ## Features
 
-- Application is hosted at Shinyapps.io, <a href="https://kiml1.shinyapps.io/olympian/">here</a>.
+- Application is hosted at Shinyapps.io, <a href="https://kiml1.shinyapps.io/eSports/">here</a>.
 
 ---
 
