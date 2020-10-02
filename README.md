@@ -4,7 +4,7 @@
 A small data science project that aims to explore the earnings in the industry of eSports.<br>
 The data was scrapped from <a href="https://www.esportsearnings.com/">Esportsearnings.com</a> using Python. 
 Data was treated and analysed using <b>Python</b> and <b>R</b>.<br>
-Shiny app UI was made in <b>JavaScript</b>, <b>HTML</b> and <b>CSS</b>. Template used is from <a href="https://colorlib.com/">Colorlib</a>.
+Shiny app UI was made in <b>JavaScript</b>, <b>HTML</b> and <b>CSS</b>.
 
 ---
 
